@@ -8,5 +8,5 @@
 	</tr>
 	
 </table>
-
+<%= button_to "Checkout", new_order_path, :method => :get %>
 <%= button_to "Empty Cart", cart, :method => :delete, :confirm => "Are you sure?", :remote => true %>
