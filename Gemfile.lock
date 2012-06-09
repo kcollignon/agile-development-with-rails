@@ -1,3 +1,10 @@
+GIT
+  remote: git://github.com/rails/prototype-rails.git
+  revision: 967bc9b5cafe5a1e92d646b7d7b2d900a596147b
+  specs:
+    prototype-rails (3.2.1)
+      rails (~> 3.2)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -105,6 +112,7 @@ PLATFORMS
 DEPENDENCIES
   coffee-rails (~> 3.2.1)
   jquery-rails
+  prototype-rails!
   rails (= 3.2.3)
   sass-rails (~> 3.2.3)
   sqlite3
