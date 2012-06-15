@@ -17,6 +17,6 @@ config.action_mailer.deliver_method = :smtp
  # :user_name => ",
  # :password => "",
  # :enable_starttls_auto => true
-}
+#}
 
 end

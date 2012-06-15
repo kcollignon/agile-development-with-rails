@@ -1,4 +1,8 @@
 AgileWebDevelopmentRails::Application.routes.draw do
+  get "admin/index"
+
+  resources :users
+
   resources :orders
 
   resources :line_items
@@ -6,6 +10,13 @@ AgileWebDevelopmentRails::Application.routes.draw do
   resources :carts
 
   get "store/index"
+  get "admin" => 'admin#index'
+  
+  controller :sessions do
+    get 'login' => :new
+    post 'login' => :create
+    delete 'logout' => :destroy
+  end
 
   resources :products do
     get :who_bought, :on => :member
